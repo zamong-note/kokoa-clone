@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Kokoa Clone</title>
 </head>
 <body>
-    <div id="status-bar">
-        <div class="status-bar__column"></div>
+    <div class="status-bar">
+        <div class="status-bar__column">
             <span>No Service</span>
             <i class="fa-solid fa-wifi"></i>
-        <div class="status-bar__column"></div>
+        </div>
+        <div class="status-bar__column">
             <span>18:43</span>
-        <div class="status-bar__column"></div>
+        </div>
+        <div class="status-bar__column">
             <span>110%</span>
-            <i class="fa-solid fa-battery-full"></i>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
             <i class="fa-solid fa-bolt"></i>
+        </div>
     </div>
 
     <header class="welcome-header">
@@ -38,10 +42,12 @@
 </html>
 
 
-
-
+<!--    #6.5 Status Bar CSS
+ CSS 파일을 만들어서 작업
+-->
 
 <!--
+
 
 -->
 
@@ -92,3 +98,4 @@ header가 엄청 많을거라 css에서 수정하기 쉽도록 class를 지정�
 form, 링크 등 요소들이 있을 경우 그게 얼마나 많은지에 따라서 이름 짓는것에 더 신경써야 한다. 미리 어떤걸 만들건지 생각해놔야 좋음
 특히 링크들을 많아서, 그 하나하나 id, class를 지정해주기 힘들다. 그래서 form 안에 집어넣었음.
 -->
+

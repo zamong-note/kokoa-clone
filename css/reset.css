@@ -122,3 +122,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* 모든 input들 클릭했을 때 outline 없애기 */
+input:focus {
+    outline: none;
+}

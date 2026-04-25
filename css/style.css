@@ -5,6 +5,11 @@
 @import "status-bar.css";
 /* 6.6 css파일 분리, style.css 파일은 다른 css 파일을 추가하는 파일로 쓰기로*/
 
+@import "variables.css";
+/* 6.7 추가 */
+
+
+
 body {
     font-family: "Open Sans", sans-serif;
     }
@@ -29,3 +34,28 @@ body {
     opacity: 0.7;
 }
 
+/* 여러 개의 input들을 가지게 될거라 class 말고 id로 */
+#login-form {   
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+#login-form input {
+    border: none;
+    padding: 15px 0px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    transition: border-color 0.3s ease-in-out;
+    /* transition : 뭔가 살짝 색깔변화 지연? */
+}
+
+#login-form input::placeholder {
+    color:rgba(0, 0, 0, 0.4);
+}
+
+/* 클릭했을 때 조금 더 border-bottom 변화 */
+#login-form input:focus {
+    border-color: var(--yellow);
+}

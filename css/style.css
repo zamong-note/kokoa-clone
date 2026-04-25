@@ -45,8 +45,12 @@ body {
     border: none;
     padding: 15px 0px;
     font-size: 18px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     margin-bottom: 25px;
+}
+
+/* not : 적용되지 않아야 할 것 */
+#login-form input:not([type="submit"]) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     transition: border-color 0.3s ease-in-out;
     /* transition : 뭔가 살짝 색깔변화 지연? */
 }
@@ -59,3 +63,20 @@ body {
 #login-form input:focus {
     border-color: var(--yellow);
 }
+
+
+#login-form input[type="submit"] {
+    background-color: var(--yellow);
+    cursor: pointer;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+
+#login-form a {
+    text-align: center;
+    text-decoration: none;
+    color:inherit;  /* login-form의 default color인 black를 받아옴*/
+    font-size: 13px;
+}
+
